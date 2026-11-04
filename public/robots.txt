@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ahnjeongbin.com/sitemap-index.xml

@@ -1,0 +1,10 @@
+---
+import '../styles/global.css';
+import '@fontsource/dm-sans/400.css';
+import '@fontsource/dm-sans/500.css';
+import '@fontsource/dm-sans/600.css';
+import '@fontsource/dm-sans/700.css';
+const {title='안정빈 — Art, Systems & Ideas',description='AI, 미술, 공간, 웹앱 프로덕션을 넘나드는 작업과 기록.'}=Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+---
+<!doctype html><html lang="ko"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="generator" content={Astro.generator}/><meta name="description" content={description}/><meta name="theme-color" content="#f7f6f3"/><link rel="canonical" href={canonical}/><link rel="icon" href="/favicon.svg" type="image/svg+xml"/><link rel="alternate" type="application/rss+xml" title="안정빈 글 RSS" href="/rss.xml"/><meta property="og:type" content="website"/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><title>{title}</title></head><body><div class="site-wrap"><header class="header"><a class="wordmark" href="/" aria-label="홈">AJB<span class="accent-dot">.</span></a><nav aria-label="주요 메뉴"><a href="/portfolio">Work</a><a href="/blog">Journal</a><a href="/about">About</a><a class="nav-contact" href="mailto:beang66@gmail.com">Contact <span aria-hidden="true">↗</span></a></nav></header><main><slot/></main><footer class="footer"><div><strong>AJB<span class="accent-dot">.</span></strong><p>Ideas across art, space & technology.</p></div><div class="footer-links"><a href="/blog">Journal</a><a href="/portfolio">Work</a><a href="/rss.xml">RSS</a><a href="mailto:beang66@gmail.com">Email ↗</a></div><p class="copyright">© {new Date().getFullYear()} Ahn Jeongbin. Built with Astro.</p></footer></div></body></html>
