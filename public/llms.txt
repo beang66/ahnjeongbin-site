@@ -1,0 +1,34 @@
+# Ahn Jeongbin — Art, Systems & Ideas
+
+> A Korean-language personal portfolio and journal by Ahn Jeongbin, exploring AI, art, spatial design, web application production, content, and reflective writing.
+
+This is an independently authored portfolio and publishing website, built with Astro and hosted on Cloudflare Pages. The site presents selected projects and journal articles. Project descriptions are introductions, not public APIs or guarantees of availability. Some editorial posts are introductory drafts; confirm important details using their original sources.
+
+## Site
+- [Home](https://ahnjeongbin.com/): Overview of creative work and latest articles.
+- [About](https://ahnjeongbin.com/about/): Background, interests, and contact.
+- [Portfolio](https://ahnjeongbin.com/portfolio/): Selected product, data, and operations projects.
+- [Journal](https://ahnjeongbin.com/blog/): Blog index with category filters.
+
+## Selected projects
+- [AI-Newsroom OS](https://ahnjeongbin.com/portfolio/#newsroom): Editorial workflow product for writing, verification, transformation, and archiving.
+- [Art City Intelligence](https://ahnjeongbin.com/portfolio/#art-city): Data-informed exploration of cities and cultural ecosystems.
+- [NewTeams](https://ahnjeongbin.com/portfolio/#newteams): Agent orchestration project under research and development.
+- [Furniture Operations OS](https://ahnjeongbin.com/portfolio/#queen): Furniture order, estimate, and production workflow design.
+
+## Articles
+- [AI 도구가 아니라 작업의 흐름을 설계하기](https://ahnjeongbin.com/blog/ai-workflows/): Thoughts on AI-oriented workflow design.
+- [도시의 문화를 숫자로 읽는다는 것](https://ahnjeongbin.com/blog/art-and-data/): Comparing urban culture through data.
+- [이곳에 기록할 것들](https://ahnjeongbin.com/blog/start-here/): Introduction to the journal.
+
+## Machine-readable resources
+- [RSS feed](https://ahnjeongbin.com/rss.xml): Published articles and dates.
+- [Sitemap](https://ahnjeongbin.com/sitemap-index.xml): Crawlable page listing.
+- [AI resource catalog](https://ahnjeongbin.com/ai-catalog.json): Site-specific resource manifest; not a broadly standardized AI registry format.
+- [robots.txt](https://ahnjeongbin.com/robots.txt): Crawler directives.
+
+## Optional
+- [GitHub source repository](https://github.com/beang66/ahnjeongbin-site): Public Astro source.
+- [Email](mailto:beang66@gmail.com): Contact.
+
+The public website is a static site. It does not expose a public application API.
