@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ahnjeongbin.com/ai-catalog.schema.json",
+  "title": "Ahn Jeongbin site-specific AI resource catalog",
+  "description": "Custom schema only; not a universal AI registry standard.",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "schemaStatus",
+    "id",
+    "name",
+    "description",
+    "homepage",
+    "language",
+    "publisher",
+    "siteType",
+    "resources",
+    "discovery",
+    "apiEndpoints"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "schemaStatus": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "format": "uri"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "homepage": {
+      "type": "string",
+      "format": "uri"
+    },
+    "language": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "object",
+      "required": [
+        "name",
+        "type",
+        "url"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    },
+    "siteType": {
+      "type": "string"
+    },
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "title",
+          "url"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "webpage",
+              "collection",
+              "article"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "language": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "discovery": {
+      "type": "object",
+      "required": [
+        "llms",
+        "robots",
+        "sitemap",
+        "rss"
+      ],
+      "additionalProperties": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "apiEndpoints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "url",
+          "description"
+        ],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
