@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schemaVersion": "1.0.0",
+  "schemaStatus": "site-specific; not an industry standard",
+  "id": "https://ahnjeongbin.com/ai-catalog.json",
+  "name": "Ahn Jeongbin — Art, Systems & Ideas",
+  "description": "Korean-language independent portfolio and journal on AI, art, spatial design, web application production, content, and writing.",
+  "homepage": "https://ahnjeongbin.com/",
+  "language": "ko",
+  "publisher": {
+    "name": "Ahn Jeongbin",
+    "type": "Person",
+    "url": "https://ahnjeongbin.com/about/"
+  },
+  "siteType": "static-portfolio-and-blog",
+  "resources": [
+    {
+      "id": "home",
+      "type": "webpage",
+      "title": "Home",
+      "url": "https://ahnjeongbin.com/"
+    },
+    {
+      "id": "about",
+      "type": "webpage",
+      "title": "About",
+      "url": "https://ahnjeongbin.com/about/"
+    },
+    {
+      "id": "portfolio",
+      "type": "collection",
+      "title": "Selected projects",
+      "url": "https://ahnjeongbin.com/portfolio/"
+    },
+    {
+      "id": "journal",
+      "type": "collection",
+      "title": "Journal",
+      "url": "https://ahnjeongbin.com/blog/"
+    },
+    {
+      "id": "article-ai-workflows",
+      "type": "article",
+      "title": "AI 도구가 아니라 작업의 흐름을 설계하기",
+      "url": "https://ahnjeongbin.com/blog/ai-workflows/",
+      "language": "ko"
+    },
+    {
+      "id": "article-art-and-data",
+      "type": "article",
+      "title": "도시의 문화를 숫자로 읽는다는 것",
+      "url": "https://ahnjeongbin.com/blog/art-and-data/",
+      "language": "ko"
+    },
+    {
+      "id": "article-start-here",
+      "type": "article",
+      "title": "이곳에 기록할 것들",
+      "url": "https://ahnjeongbin.com/blog/start-here/",
+      "language": "ko"
+    }
+  ],
+  "discovery": {
+    "llms": "https://ahnjeongbin.com/llms.txt",
+    "robots": "https://ahnjeongbin.com/robots.txt",
+    "sitemap": "https://ahnjeongbin.com/sitemap-index.xml",
+    "rss": "https://ahnjeongbin.com/rss.xml"
+  },
+  "apiEndpoints": [],
+  "notes": [
+    "This manifest is a site-specific discoverability document. Consumers must not assume universal registry support.",
+    "No public REST or GraphQL API is currently offered.",
+    "Editorial pages are informational; validate important claims against primary sources."
+  ]
+}
